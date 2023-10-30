@@ -13,7 +13,6 @@ def starup():
 		file.write(r'start "" %s' % file_play )
 starup()
 
-#os.replace('s.bat', f'C:\Users\{s}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup')
 def close():
 	pass
 def rikroll():
