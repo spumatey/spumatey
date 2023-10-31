@@ -18,6 +18,10 @@ def close():
 def rikroll():
 	webbrowser.open('https://www.youtube.com/watch?v=xvFZjo5PgG0', new=2)
 tk = Tk()
+canvas = Canvas(tk, width=125, height=100)
+canvas.pack(anchor=NW)
+dv = PhotoImage(file='dv.png')
+canvas.create_image(1, 1, anchor=NW, image=dv)
 tk.config(bg = 'light green')
 tk.wm_state('zoomed')
 tk.overrideredirect(True)
